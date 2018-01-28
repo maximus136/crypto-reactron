@@ -1,0 +1,63 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 58px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 100px;
+  color: white;
+}
+
+.App-title {
+  font-size: 22px;
+  margin: 5px;
+}
+
+.currency-symbol {
+  color: rgb(255, 14, 0);
+  font-weight: bolder;
+  font-family: fantasy;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.container {
+  background: radial-gradient(black 15%, transparent 16%) 0 0, radial-gradient(black 15%, transparent 16%) 8px 8px,
+    radial-gradient(rgba(255, 255, 255, .1) 15%, transparent 20%) 0 1px,
+    radial-gradient(rgba(255, 255, 255, .1) 15%, transparent 20%) 8px 9px;
+  background-color: #282828;
+  background-size: 16px 16px;
+
+  .crypto-name {
+    font-size: 35px;
+    color: burlywood;
+    font-weight: bold;
+    font-family: fantasy;
+    letter-spacing: 3px;
+  }
+
+  .rate {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    padding: 20px;
+  }
+
+  .footer {
+    display: flex;
+    color: white;
+    font-size: 10px;
+  }
+}

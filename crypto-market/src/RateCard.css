@@ -1,0 +1,19 @@
+.rate-card {
+  width: 50%; }
+  .rate-card.rate-card-second .currency {
+    margin-left: 60px; }
+  .rate-card .currency {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline; }
+    .rate-card .currency .currency--name {
+      font-size: 20px;
+      color: chocolate;
+      font-weight: bold;
+      font-family: fantasy;
+      letter-spacing: 2px; }
+    .rate-card .currency .currency--value {
+      font-size: 30px;
+      color: white;
+      font-family: fantasy;
+      letter-spacing: 2px; }

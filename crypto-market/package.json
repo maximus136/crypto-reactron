@@ -1,0 +1,32 @@
+{
+  "name": "crypto-market",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "node-sass-chokidar": "0.0.3",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-scripts": "1.1.0",
+    "socket.io": "^2.0.4"
+  },
+  "devDependencies": {
+    "concurrently": "^3.5.1",
+    "electron": "^1.7.11",
+    "electron-packager": "^10.1.2",
+    "foreman": "^2.0.0",
+    "wait-on": "^2.1.0"
+  },
+  "main": "src/starter.js",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "electron": "electron .",
+    "dev": "concurrently -r \"yarn start\" \"wait-on http://localhost:3000/ && yarn electron\"",
+    "build-css": "node-sass-chokidar src/ -o src/",
+    "watch-css": "npm run build-css && node-sass-chokidar src/ -o src/ --watch --recursive",
+    "packager": "electron-packager ../crypto-market --all --out ~/Desktop/CryptoMarket --version 0.1 --overwrite"
+  },
+  "homepage": "./"
+}
